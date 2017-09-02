@@ -1,6 +1,11 @@
-# HdbookAngular
+# Hdbook written by Angular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.2.
+
+# Steps
+
+1. [create app + divide component - commit: 483e557 ](https://github.com/uixcrazy/hdbook-angular/commit/b305f6c90b3b24b945f950861c952035aa8517a7)
+2. [login] (http://jasonwatmore.com/post/2016/08/16/angular-2-jwt-authentication-example-tutorial)
 
 ## Development server
 

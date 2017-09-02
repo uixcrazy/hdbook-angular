@@ -5,6 +5,16 @@
       <li><a routerLink="/hdbook" routerLinkActive="active">Kho sách của HD</a></li>
     </ul>
   </nav>
+
+  <div>
+      <div>
+          <ul>
+              <li *ngFor="let user of users">{{user.firstName}} {{user.lastName}}</li>
+          </ul>
+      </div>
+      <p><a [routerLink]="['/login']">Logout</a></p>
+  </div>
+
   <section class="container">
     <!-- routing here -->
     <router-outlet></router-outlet>
