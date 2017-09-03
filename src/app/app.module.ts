@@ -3,12 +3,12 @@ import { NgModule } from '@angular/core';
 import { FormsModule }    from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { fakeBackendProvider } from './_helpers/fake-backend';
+import { fakeBackendProvider } from './helpers/fake-backend';
 import { MockBackend, MockConnection } from '@angular/http/testing';
 import { BaseRequestOptions } from '@angular/http';
 
 // create fake backend
-import { AuthGuard } from './components/login/auth.guard';
+import { AuthGuard } from './guards/auth.guard';
 import { AppRoutingModule } from './app-routing.module';
 
 // services
@@ -16,6 +16,7 @@ import { AuthenticationService, UserService } from './services/index';
 
 // components
 import { AppComponent } from './app.component';
+import { PageNotFoundComponent } from './not-found.component';
 import { MybookComponent }  from './components/mybook/mybook.component';
 import { HdbookComponent }  from './components/hdbook/hdbook.component';
 import { LoginComponent } from './components/login/login.component';
@@ -23,6 +24,7 @@ import { LoginComponent } from './components/login/login.component';
 @NgModule({
   declarations: [
     AppComponent,
+    PageNotFoundComponent,
     LoginComponent,
     MybookComponent,
     HdbookComponent
