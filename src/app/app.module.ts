@@ -3,11 +3,11 @@ import { NgModule } from '@angular/core';
 import { FormsModule }    from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-// create fake backend
+import { fakeBackendProvider } from './_helpers/fake-backend';
 import { MockBackend, MockConnection } from '@angular/http/testing';
 import { BaseRequestOptions } from '@angular/http';
-import { fakeBackendProvider } from './_helpers/fake-backend';
 
+// create fake backend
 import { AuthGuard } from './components/login/auth.guard';
 import { AppRoutingModule } from './app-routing.module';
 
