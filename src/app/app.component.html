@@ -1,8 +1,8 @@
 <div>
-  <nav>
+  <nav *ngIf="currentUser">
     <ul class="navbar">
-      <li><a routerLink="/mybook" routerLinkActive="active">Tủ Sách Của Tôi</a></li>
-      <li><a routerLink="/hdbook" routerLinkActive="active">Kho sách của HD</a></li>
+      <li><a routerLink="/mybook" routerLinkActive="active">My Books</a></li>
+      <li><a routerLink="/hdbook" routerLinkActive="active">Book Stores</a></li>
     </ul>
   </nav>
 
@@ -12,7 +12,10 @@
               <li *ngFor="let user of users">{{user.firstName}} {{user.lastName}}</li>
           </ul>
       </div>
-      <p><a [routerLink]="['/login']">Logout</a></p>
+      <h1>Hi {{currentUser && currentUser.firstName}}!</h1>
+      <p *ngIf="currentUser">
+        <button (click)="userLogout()">Logout</button>
+      </p>
   </div>
 
   <section class="container">

@@ -1,0 +1,42 @@
+// =============================================================
+// 1. Settings
+// =============================================================
+
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700|Roboto:300,300i,400,400i,500&subset=vietnamese");
+
+$font-suffix-sans-serif: Arial, Helvetica, sans-serif;
+$font-primary: "Roboto", $font-suffix-sans-serif;
+$font-secondary: "Roboto Condensed", $font-suffix-sans-serif;
+
+// =============================================================
+
+$colors: (
+  primary: (
+    base: #0294a5,
+    light: #56c5d6,
+    dark: #006676,
+  ),
+  secondary: (
+    base: #c1403d,
+    light: #f97168,
+    dark: #8a0016,
+  )
+);
+// How to use --- color: map-get(map-get($colors, primary), base);
+
+$color-brand: (
+  facebook: #3b5998,
+  twitter: #1da1f2,
+  googleplus: #dd4b39,
+  linkedin: #0077b5,
+  youtube: #cd201f,
+  instagram: #405de6,
+  yahoo: #410093,
+  github: #333,
+  git: #f54d27
+);
+
+// =============================================================
+
+$border-standard: 1px solid #e5e5e5;
+$border-radius-standard: 3px;

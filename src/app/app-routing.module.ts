@@ -12,7 +12,7 @@ const routes: Routes = [
   // { path: '', component: MybookComponent, canActivate: [AuthGuard] },
   { path: 'login', component: LoginComponent },
   { path: 'mybook', component: MybookComponent, canActivate: [AuthGuard] },
-  { path: 'hdbook',     component: HdbookComponent },
+  { path: 'hdbook', component: HdbookComponent, canActivate: [AuthGuard] },
   { path: '**', component: PageNotFoundComponent }
   // { path: 'write-story',     component: HeroesComponent },
   // { path: 'detail/:id', component: HeroDetailComponent }

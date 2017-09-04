@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~normalize.css/normalize.css';
+@import 'assets/scss/normalize';
 
 * {
   padding: 0;
@@ -44,4 +44,9 @@
   color: #fff;
   background-color: #007bff;
   border-color: #007bff;
+}
+
+.login-form {
+  margin: auto;
+  width: 300px;
 }

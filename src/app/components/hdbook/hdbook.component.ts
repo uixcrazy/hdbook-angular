@@ -12,7 +12,7 @@ import { Component, OnInit } from '@angular/core';
 export class HdbookComponent implements OnInit {
   welcome : string;
   constructor(){
-    this.welcome = "Welcome to home page";
+    this.welcome = "Welcome to HDbook page";
   };
 
   ngOnInit(): void {
