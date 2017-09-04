@@ -1,4 +1,4 @@
-# Hdbook written by Angular
+# HDbook written by Angular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.2.
 
@@ -9,6 +9,16 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 2. [login](http://jasonwatmore.com/post/2016/09/29/angular-2-user-registration-and-login-example-tutorial)
 
 3. [router animation](http://jasonwatmore.com/post/2017/04/19/angular-2-4-router-animation-tutorial-example)
+
+https://github.com/angular/material2/blob/master/guides/getting-started.md
+
+https://github.com/angular/material2/blob/master/guides/theming.md
+
+
+
+
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

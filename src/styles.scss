@@ -1,52 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
-@import 'assets/scss/normalize';
+@import '~normalize.css/normalize';
+@import '~@angular/material/theming';
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// **Be sure that you only ever include this mixin once!**
+@include mat-core();
+
+// Define the default theme (same as the example above).
+// https://material.io/guidelines/style/color.html#color-color-palette
+$candy-app-primary: mat-palette($mat-blue, A200, A100, A400);
+$candy-app-accent:  mat-palette($mat-pink, A200, A100, A400);
+$candy-app-theme:   mat-light-theme($candy-app-primary, $candy-app-accent);
+
+// Include the default theme styles.
+@include angular-material-theme($candy-app-theme);
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-.form-control {
-  display: block;
-  width: 100%;
-  padding: .5rem .75rem;
-  font-size: 1rem;
-  line-height: 1.25;
-  color: #495057;
-  background-color: #fff;
-  background-image: none;
-  background-clip: padding-box;
-  border: 1px solid rgba(0,0,0,.15);
-  border-radius: .25rem;
-  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-}
-
-.btn {
-  display: inline-block;
-  font-weight: 400;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  border: 1px solid transparent;
-  padding: .5rem .75rem;
-  font-size: 1rem;
-  line-height: 1.25;
-  border-radius: .25rem;
-  transition: all .15s ease-in-out;
-}
-
-.btn-primary {
-  color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
-}
-
-.login-form {
-  margin: auto;
-  width: 300px;
 }

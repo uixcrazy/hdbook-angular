@@ -1,0 +1,26 @@
+<md-card class="login-form">
+  <md-card-title>Login</md-card-title>
+  <md-card-subtitle *ngIf="error">{{error}}</md-card-subtitle>
+
+  <form name="form" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>
+    <md-form-field>
+      <input mdInput placeholder="Username" name="username" [(ngModel)]="model.username" #username="ngModel" required >
+      <md-error *ngIf="f.submitted && !username.valid">
+        Username is <strong>required</strong>
+      </md-error>
+    </md-form-field>
+
+    <md-form-field>
+      <input mdInput placeholder="Password" name="username" [(ngModel)]="model.password" #username="ngModel" required type="password">
+      <md-error *ngIf="f.submitted && !password.valid">
+        Password is <strong>required</strong>
+      </md-error>
+    </md-form-field>
+
+    <button [disabled]="loading" md-raised-button color="primary">
+      Login
+      <span *ngIf="loading">loading....</span>
+    </button>
+    <a [routerLink]="['/register']" md-button>Register</a>
+  </form>
+</md-card>
