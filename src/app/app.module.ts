@@ -2,8 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule }    from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { MaterialModule } from '@angular/material';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { Ng2SmartTableModule } from 'ng2-smart-table';
+
 
 import { fakeBackendProvider } from './helpers/fake-backend';
 import { MockBackend, MockConnection } from '@angular/http/testing';
@@ -36,8 +37,7 @@ import { LoginComponent } from './components/login/login.component';
     AppRoutingModule,
     FormsModule,
     HttpModule,
-    MaterialModule,
-    BrowserAnimationsModule
+    Ng2SmartTableModule
   ],
   providers: [
     AuthGuard,
