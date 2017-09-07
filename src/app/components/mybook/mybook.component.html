@@ -1,5 +1,13 @@
 <div>
   my book - Welcome to my HOme Page
-  <input #search class="search" type="text" placeholder="Search..." (keydown.enter)="onSearch(search.value)">
-    <ng2-smart-table [settings]="settings" [source]="source"></ng2-smart-table>
+  <!-- (keydown.enter)="onSearch(search.value)" -->
+  <input class="search" type="text" placeholder="Search...">
+  <ng2-smart-table
+  [settings]="settings" [source]="data"
+  (deleteConfirm)="onDeleteConfirm($event)"
+  (editConfirm)="onSaveConfirm($event)"
+  (createConfirm)="onCreateConfirm($event)"
+  (create)="onCreate($event)"
+  (delete)="onDelete($event)"
+  ></ng2-smart-table>
 </div>

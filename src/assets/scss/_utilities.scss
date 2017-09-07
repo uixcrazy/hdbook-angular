@@ -1,0 +1,17 @@
+// Reset
+//
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.clearfix {
+  @include clearfix();
+}
+
+
+// function
+// @function theme-color($key: "primary") {
+//   @return map-get($theme-colors, $key);
+// }

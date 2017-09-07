@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule }    from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { Ng2SmartTableModule } from 'ng2-smart-table';
+import { Ng2SmartTableModule } from '../assets/component/ng2-smart-table';
 
 
 import { fakeBackendProvider } from './helpers/fake-backend';

@@ -1,20 +1,18 @@
 // =============================================================
 // 1. Settings
+// https://material.io/guidelines/style/color.html#color-color-palette
 // =============================================================
-
-@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700|Roboto:300,300i,400,400i,500&subset=vietnamese");
 
 $font-suffix-sans-serif: Arial, Helvetica, sans-serif;
-$font-primary: "Roboto", $font-suffix-sans-serif;
-$font-secondary: "Roboto Condensed", $font-suffix-sans-serif;
-
-// =============================================================
+$font-family-base: "Roboto", $font-suffix-sans-serif;
+// $font-primary: "Roboto", $font-suffix-sans-serif;
+// $font-secondary: "Roboto Condensed", $font-suffix-sans-serif;
 
 $colors: (
   primary: (
-    base: #0294a5,
-    light: #56c5d6,
-    dark: #006676,
+    base: #0277bd,
+    light: #0288d1,
+    dark: #01579b,
   ),
   secondary: (
     base: #c1403d,
@@ -23,7 +21,6 @@ $colors: (
   )
 );
 // How to use --- color: map-get(map-get($colors, primary), base);
-
 $color-brand: (
   facebook: #3b5998,
   twitter: #1da1f2,
@@ -35,8 +32,29 @@ $color-brand: (
   github: #333,
   git: #f54d27
 );
-
-// =============================================================
-
-$border-standard: 1px solid #e5e5e5;
-$border-radius-standard: 3px;
+$blue: #007bff !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #e83e8c !default;
+$red: #dc3545 !default;
+$orange: #fd7e14 !default;
+$yellow: #ffc107 !default;
+$green: #28a745 !default;
+$teal: #20c997 !default;
+$cyan: #17a2b8 !default;
+// gray
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+// border
+$border-width: 1px !default;
+$border-color: $gray-200 !default;
+$border-radius: .25rem !default;
